@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Re-Coded Gallery</title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+
+</head>
+<body>
+
+        <h1 class="text-center m-5">Gallery</h1>
+
+    <section id="slideShow" class="container-fluid">
+        <div class="col-md-6 col-sm-8 mx-auto mt-4">
+            <img src="./images/fifve.jpg" alt="" class="slideImage">
+            <div class="slidetext">
+                <h3 class="slideTitle p-0 m-0">bdhfhjfn</h3>
+                <p class="slideDate p-0 m-0">ndsjncj</p>
+                <p class="slideDesc p-0 m-0">njksncjn</p>
+            </div>
+            <div class="controlButtons">
+            <i class="fas fa-chevron-left" onclick="prev()"></i>
+            <i class="fas fa-chevron-right" onclick="next()"></i>
+            </div>
+        </div>
+        <h5 class="autoPlayb" onclick="autoSlide()">Auto Play <i class="fas fa-play"></i></h5>
+    </section>
+
+    <section id="gallery" class="container my-3 mx-auto">
+            <button class="all" onclick="displayAll()">All</button>
+            <button class="buildingb" onclick="building()">Buildings</button>
+            <button class="carsb" onclick="cars()">cars</button>
+            <button class="natureb" onclick="nature()">nature</button>
+            <button class="fashionb" onclick="fashion()">fashion</button>
+            <button class="uploadb" onclick="displayForm()">Upload  <i class="fas fa-upload"></i></button>
+            <div class="row" id="galleryImages"></div>
+    </section>
+
+    <script src="./js/script.js"> </script>
+
+</body>
+</html>
